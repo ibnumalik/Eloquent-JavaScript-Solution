@@ -1,16 +1,15 @@
 module.exports = function () {
-    var sass = './src/sass/**/*.scss';
+    var sass = [
+        './src/sass/**/*.scss',
+        '!./src/sass/vendor.scss',
+    ];
+    var vendorStyle = './src/sass/vendor.scss';
     var public = './public/';
 
     var config = {
         sass: sass,
-        vendorCss: [
-            './node_modules/materialize-css/sass/materialize.scss',
-            './node_modules/prism-themes/themes/prism-duotone-light.css'
-        ],
+        vendorStyle: vendorStyle,
         vendorJs: [
-            './node_modules/jquery/dist/jquery.js',
-            './node_modules/materialize-css/dist/js/materialize.js',
             './node_modules/prismjs/prism.js'
         ],
         public: public,
