@@ -1,13 +1,4 @@
-@import '../../node_modules/prism-themes/themes/prism-duotone-light.css';
+// @import '~prism-themes/themes/prism-duotone-light.css';
 
 // Mixin
-@import '../../node_modules/materialize-css/sass/components/mixins';
-@import '../../node_modules/materialize-css/sass/components/color';
-// Variables
-@import '../../node_modules/materialize-css/sass/components/variables';
-// Reset
-@import '../../node_modules/materialize-css/sass/components/normalize';
-
-// Component
-@import '../../node_modules/materialize-css/sass/components/grid';
-@import '../../node_modules/materialize-css/sass/components/typography';
+@import '~materialize-css/sass/components/materialize.scss';
